@@ -32,7 +32,7 @@ int main(){
     for(int i=0;i<N;i++){
         for (int j=0;j<M;j++){
             sum[i][j] = 0;
-            scanf("%d",a[i][j]);
+            scanf("%d",&a[i][j]);
             if(i==0&&j!=0){
                 sum[i][j]=sum[i][j-1]+a[i][j];
             }else if(j==0 && i!=0){
